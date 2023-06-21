@@ -6,86 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".inquiry_page">
 
-    <Button
-        android:id="@+id/payment_btn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="click3"
-        android:text="پرداخت"
-        android:textSize="20sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="620dp" />
+    <WebView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/webview2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 
     <Button
         android:id="@+id/back_btn2"
-        android:onClick="click2"
+        android:onClick="click1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=">"
-        android:textSize="20sp"
+        android:background="@drawable/backIcon"
         tools:layout_editor_absoluteX="321dp"
         tools:layout_editor_absoluteY="4dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/endOfCourse_tv2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="313dp"
-        tools:layout_editor_absoluteY="578dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/endOfCourse_tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="میزان بدهی پایان دوره:"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="231dp"
-        tools:layout_editor_absoluteY="531dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/intermediate_tv2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="313dp"
-        tools:layout_editor_absoluteY="481dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/intermediate_tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="میزان بدهی میان دوره:"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="229dp"
-        tools:layout_editor_absoluteY="432dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/bill_tv2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="318dp"
-        tools:layout_editor_absoluteY="385dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/bill_tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="شناسه قبض:"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="307dp"
-        tools:layout_editor_absoluteY="337dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -110,32 +40,13 @@
 
     <EditText
         android:id="@+id/fixedLine_et"
+        android:hint="xxx-xxxxxxxx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         tools:layout_editor_absoluteX="22dp"
         tools:layout_editor_absoluteY="114dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/payment_tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="شناسه پرداخت:"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="286dp"
-        tools:layout_editor_absoluteY="240dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/payment_tv2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="318dp"
-        tools:layout_editor_absoluteY="288dp"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -143,9 +54,9 @@
         android:onClick="click1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="استعلام"
-        android:textSize="20sp"
+        android:background="@drawable/inquiry_btn2"
         tools:layout_editor_absoluteX="158dp"
         tools:layout_editor_absoluteY="174dp"
         tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
