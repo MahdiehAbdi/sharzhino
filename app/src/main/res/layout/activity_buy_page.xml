@@ -6,11 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".buy_page">
 
+    <WebView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/webview1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="اپراتور مورد نظر خود را وارد کنید:"
+        android:text="اپراتور مورد نظر خود را انتخاب کنید:"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="319dp"
@@ -18,10 +20,11 @@
 
     <EditText
         android:id="@+id/mobile_et"
+        android:hint="xxxx xxx xx xx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="247dp"
         tools:ignore="MissingConstraints" />
@@ -58,10 +61,11 @@
 
     <EditText
         android:id="@+id/amount_et"
+        android:hint="xxxx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="124dp"
         tools:ignore="MissingConstraints" />
@@ -71,25 +75,24 @@
         android:onClick="click1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="پرداخت"
-        android:textSize="20sp"
+        android:background="@drawable/payment_btn1"
         tools:layout_editor_absoluteX="160dp"
         tools:layout_editor_absoluteY="493dp"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/back_btn1"
-        android:onClick="click2"
+        android:onClick="click1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=">"
-        android:textSize="20sp"
+        android:background="@drawable/backIcon"
         tools:layout_editor_absoluteX="321dp"
         tools:layout_editor_absoluteY="4dp"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/MCI_btn"
+        android:onClick="click1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="همراه اول"
@@ -100,6 +103,7 @@
 
     <Button
         android:id="@+id/irancell_btn"
+        android:onClick="click1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ایرانسل"
@@ -110,6 +114,7 @@
 
     <Button
         android:id="@+id/rightel_btn"
+        android:onClick="click1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="رایتل"

@@ -28,4 +28,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="181dp"
+        tools:srcCompat="@drawable/sharzhinoLogo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@tools:sample/avatars"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="565dp"
+        tools:srcCompat="@drawable/shaparakLogo" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="565dp"
+        tools:srcCompat="@drawable/bankLogo" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:lottie_rawRes="@raw/loading"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
